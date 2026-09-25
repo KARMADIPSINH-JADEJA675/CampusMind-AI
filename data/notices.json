@@ -1,0 +1,83 @@
+[
+  {
+    "id": "not_001",
+    "title": "Mid-Semester Examination Schedule for Semester 7 Announced",
+    "date": "2026-09-24",
+    "category": "Examination",
+    "author": "Controller of Examinations",
+    "priority": "High",
+    "description": "The Mid-Semester Theory and Practical examinations for B.Tech Semester 7 will commence from October 12, 2026. Detailed seating arrangements and slot timings will be published on the university portal next week."
+  },
+  {
+    "id": "not_002",
+    "title": "Microsoft Campus Recruitment Drive 2026 Registration Open",
+    "date": "2026-09-23",
+    "category": "Placement",
+    "author": "Training & Placement Cell",
+    "priority": "High",
+    "description": "Microsoft is visiting for the role of Software Development Engineer (SDE-1) offering 44.5 LPA. Eligible students (B.Tech CSE/IT with CGPA >= 7.5 and no active backlogs) must apply through the placement portal by September 28, 2026."
+  },
+  {
+    "id": "not_003",
+    "title": "Campus Hackathon: GenAI & MCP Innovation Challenge 2026",
+    "date": "2026-09-22",
+    "category": "Events",
+    "author": "Department of Computer Science",
+    "priority": "Medium",
+    "description": "Registrations are now open for the annual 36-hour Hackathon focusing on Generative AI, Model Context Protocol, and Autonomous Agents. Cash prizes worth 2.5 Lakhs. Team size: 2-4 members."
+  },
+  {
+    "id": "not_004",
+    "title": "Submission of Capstone Project Phase 1 Synopsis & Architecture",
+    "date": "2026-09-21",
+    "category": "Academic",
+    "author": "Project Coordination Committee",
+    "priority": "High",
+    "description": "All final year B.Tech students are instructed to submit their Capstone Project Phase 1 Synopsis along with system architecture diagrams to their respective project guides on or before September 30, 2026."
+  },
+  {
+    "id": "not_005",
+    "title": "Guest Lecture on Generative AI & Model Context Protocol (MCP) by Google",
+    "date": "2026-09-20",
+    "category": "Academic",
+    "author": "AI & Robotics Club",
+    "priority": "Medium",
+    "description": "Join us this Friday at 02:30 PM in Auditorium Hall 1 for an insightful keynote on 'Building Enterprise Multi-Agent Workflows with MCP' delivered by senior engineers from Google."
+  },
+  {
+    "id": "not_006",
+    "title": "Central Library Extended Reading Room Hours for Exam Season",
+    "date": "2026-09-19",
+    "category": "General",
+    "author": "Chief Librarian",
+    "priority": "Low",
+    "description": "In view of upcoming mid-term exams, the Central Digital Library and 24/7 Study Lounge will remain open until 2:00 AM on weekdays starting October 1st. Digital access to IEEE Xplore and ACM Digital Library remains active."
+  },
+  {
+    "id": "not_007",
+    "title": "Inter-University Annual Sports Meet 'Olympus 2026' Trials",
+    "date": "2026-09-18",
+    "category": "Sports",
+    "author": "Department of Physical Education",
+    "priority": "Low",
+    "description": "University sports selection trials for Cricket, Football, Basketball, and Table Tennis will be held on September 26-27 at the University Sports Complex. Registered players must report with sports kit by 08:00 AM."
+  },
+  {
+    "id": "not_008",
+    "title": "Google Cloud & AWS Student Certification Reimbursement Scheme",
+    "date": "2026-09-17",
+    "category": "Scholarship",
+    "author": "Dean Academic Affairs",
+    "priority": "Medium",
+    "description": "Under the University Skill Enhancement Initiative, students passing Associate Cloud Engineer or AWS Solutions Architect exams will receive a 75% fee reimbursement upon submitting their passing scorecards."
+  },
+  {
+    "id": "not_009",
+    "title": "Urgent: Mandatory Academic Feedback Form for Faculty Evaluation",
+    "date": "2026-09-16",
+    "category": "Academic",
+    "author": "Internal Quality Assurance Cell (IQAC)",
+    "priority": "High",
+    "description": "All 7th-semester students must complete the mid-semester faculty and course evaluation feedback on the ERP portal before admit cards are issued for the mid-term examinations."
+  }
+]

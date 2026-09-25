@@ -1,0 +1,28 @@
+[
+  {
+    "id": "std_001",
+    "name": "Alex Johnson",
+    "email": "student@campusmind.ai",
+    "password_hash": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
+    "plain_password_demo": "Student@123",
+    "enrollmentNumber": "CS2022-8492",
+    "department": "Computer Science & Engineering",
+    "semester": "Semester 7",
+    "section": "A",
+    "cgpa": 8.74,
+    "role": "student"
+  },
+  {
+    "id": "std_002",
+    "name": "Priya Sharma",
+    "email": "priya.s@campusmind.ai",
+    "password_hash": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
+    "plain_password_demo": "Student@123",
+    "enrollmentNumber": "CS2022-8493",
+    "department": "Computer Science & Engineering",
+    "semester": "Semester 7",
+    "section": "A",
+    "cgpa": 9.12,
+    "role": "student"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "note_001",
+    "subject": "DBMS",
+    "topic": "Database Normalization (1NF, 2NF, 3NF, BCNF)",
+    "title": "Comprehensive Guide to Relational Database Normalization",
+    "summary": "Normalization minimizes data redundancy and eliminates insertion, update, and deletion anomalies.",
+    "content": "Normalization is the process of organizing relational database attributes to reduce data redundancy and improve data integrity.\n\n1. First Normal Form (1NF):\n- Every column must contain atomic (indivisible) values.\n- Each record must be unique with no repeating groups.\n\n2. Second Normal Form (2NF):\n- Must be in 1NF.\n- All non-key attributes must be fully functionally dependent on the entire primary key (eliminates partial dependency).\n\n3. Third Normal Form (3NF):\n- Must be in 2NF.\n- Eliminates transitive dependency: no non-prime attribute should depend on another non-prime attribute (X -> Y where neither is a superkey).\n\n4. Boyce-Codd Normal Form (BCNF):\n- Stricter version of 3NF. For every functional dependency X -> Y, X must be a superkey of the table.",
+    "tags": ["normalization", "1nf", "2nf", "3nf", "bcnf", "dbms", "keys"]
+  },
+  {
+    "id": "note_002",
+    "subject": "DBMS",
+    "topic": "ACID Properties in Transaction Management",
+    "title": "Understanding ACID Properties in Relational Databases",
+    "summary": "Atomicity, Consistency, Isolation, and Durability ensure reliable transaction processing.",
+    "content": "A transaction is a single logical unit of work. ACID guarantees:\n- Atomicity: 'All or nothing'. Either all operations of a transaction execute successfully or the entire transaction is rolled back.\n- Consistency: A transaction transitions the database from one valid state to another, preserving all integrity constraints.\n- Isolation: Concurrent transactions execute independently without interfering with one another (preventing dirty reads, non-repeatable reads, and phantom reads).\n- Durability: Once a transaction commits, its changes survive system crashes or power failures via write-ahead logging (WAL).",
+    "tags": ["acid", "transactions", "concurrency", "dbms", "wal"]
+  },
+  {
+    "id": "note_003",
+    "subject": "DBMS",
+    "topic": "B-Trees and B+ Trees Indexing",
+    "title": "Indexing Structures: B-Tree vs B+ Tree",
+    "summary": "Balanced tree structures optimize disk I/O for database search and range queries.",
+    "content": "Indexes speed up data retrieval.\n- B-Tree: Keys and data pointers are stored in internal as well as leaf nodes. Good for point lookups.\n- B+ Tree: Keys are stored in internal nodes, but actual data records/pointers are stored exclusively in leaf nodes. Leaf nodes are linked via a doubly-linked list. This makes B+ Trees superior for range queries (e.g., SELECT WHERE age BETWEEN 20 AND 30) and disk block caching.",
+    "tags": ["b-tree", "b+ tree", "indexing", "dbms", "range query"]
+  },
+  {
+    "id": "note_004",
+    "subject": "DBMS",
+    "topic": "Concurrency Control and Two-Phase Locking (2PL)",
+    "title": "Concurrency Control and Strict 2PL Protocol",
+    "summary": "Two-phase locking ensures serializability and avoids cascading aborts.",
+    "content": "Concurrency control prevents anomalies when multiple transactions execute simultaneously.\nTwo-Phase Locking (2PL):\n1. Growing Phase: Locks are acquired and no locks can be released.\n2. Shrinking Phase: Locks are released and no new locks can be acquired.\nStrict 2PL: All exclusive (write) locks held by a transaction are retained until the transaction commits or aborts, ensuring strict serializability and preventing cascading rollbacks.",
+    "tags": ["2pl", "locking", "concurrency", "deadlock", "dbms"]
+  },
+  {
+    "id": "note_005",
+    "subject": "Computer Networks",
+    "topic": "OSI 7-Layer Reference Model vs TCP/IP Suite",
+    "title": "OSI Reference Model vs TCP/IP Protocol Suite",
+    "summary": "Layered network architecture explaining encapsulation from Application to Physical layer.",
+    "content": "The OSI model consists of 7 layers:\n1. Physical: Raw bit transmission over physical media (cables, radio waves).\n2. Data Link: Framing, MAC addressing, error detection (Ethernet, Wi-Fi).\n3. Network: Logical addressing and routing of packets (IP, ICMP).\n4. Transport: End-to-end communication, flow control, reliability (TCP, UDP).\n5. Session: Dialog control and session establishment.\n6. Presentation: Syntax, compression, encryption/decryption (TLS/SSL).\n7. Application: User-facing network protocols (HTTP, SMTP, DNS, FTP).\nIn TCP/IP, Session, Presentation, and Application merge into a single Application Layer.",
+    "tags": ["osi model", "tcp/ip", "layers", "networking", "ethernet"]
+  },
+  {
+    "id": "note_006",
+    "subject": "Computer Networks",
+    "topic": "TCP Three-Way Handshake and Connection Teardown",
+    "title": "TCP Handshake, Sequence Numbers, and Connection States",
+    "summary": "Reliable connection establishment via SYN, SYN-ACK, and ACK packets.",
+    "content": "TCP is a connection-oriented, reliable transport layer protocol.\nThree-Way Handshake:\n1. Client -> Server: SYN (Synchronize sequence number X)\n2. Server -> Client: SYN-ACK (Acknowledge X+1, choose own sequence number Y)\n3. Client -> Server: ACK (Acknowledge Y+1)\nConnection Teardown uses a 4-way FIN/ACK handshake (FIN -> ACK, FIN -> ACK) with TIME_WAIT state to ensure duplicate packets dissipate.",
+    "tags": ["tcp", "handshake", "syn", "ack", "networking", "transport"]
+  },
+  {
+    "id": "note_007",
+    "subject": "Computer Networks",
+    "topic": "Domain Name System (DNS) Resolution Process",
+    "title": "How DNS Resolves Domain Names to IP Addresses",
+    "summary": "Hierarchical DNS lookups from root servers to authoritative name servers.",
+    "content": "DNS translates human-readable hostnames (e.g. google.com) into numerical IP addresses.\nLookup hierarchy:\n1. Browser & OS Cache check.\n2. Recursive Resolver (ISP or 8.8.8.8).\n3. Root DNS Server (.): Directs to Top-Level Domain (TLD) server.\n4. TLD Server (.com, .edu, .org): Directs to Authoritative Name Server.\n5. Authoritative Name Server: Returns the exact A/AAAA record.\n6. Resolver caches the response according to TTL (Time to Live).",
+    "tags": ["dns", "networking", "ip address", "resolver", "tld"]
+  },
+  {
+    "id": "note_008",
+    "subject": "Computer Networks",
+    "topic": "Subnetting, CIDR, and IPv4 vs IPv6",
+    "title": "IP Addressing, Classless Inter-Domain Routing (CIDR), and Subnets",
+    "summary": "Calculating network IDs, broadcast addresses, and subnet masks.",
+    "content": "CIDR notation (e.g. 192.168.1.0/24) specifies the network prefix length.\n- Prefix (/24) leaves 32 - 24 = 8 host bits.\n- Total usable hosts = 2^8 - 2 = 254 (minus network address and broadcast address).\nIPv4 provides 32-bit addresses (~4.3 billion), whereas IPv6 provides 128-bit addresses (3.4 x 10^38), eliminating NAT and providing native IPSec.",
+    "tags": ["subnetting", "cidr", "ipv4", "ipv6", "networking"]
+  },
+  {
+    "id": "note_009",
+    "subject": "Artificial Intelligence",
+    "topic": "Model Context Protocol (MCP) Architecture",
+    "title": "Model Context Protocol: Standardizing LLM Tool Calling and External Context",
+    "summary": "MCP provides an open standard for LLMs to safely interact with local and remote data sources, tools, and prompts.",
+    "content": "Model Context Protocol (MCP) is an open protocol created by Anthropic that standardizes how AI applications connect to external context and capabilities.\nKey components:\n- MCP Host: The AI application or orchestration agent (e.g. Claude Desktop, Antigravity IDE, CampusMind AI backend).\n- MCP Client: Maintains a 1:1 connection with an MCP server, negotiating protocol capabilities, listing tools, and calling tools.\n- MCP Server: Exposes structured resources, tools, and prompt templates.\n- MCP Tools: Executable functions with JSON schema parameter validation that the LLM invokes to fetch realtime data (e.g., get_timetable, get_notices).\nTransport protocols include Stdio (standard input/output for local processes) and SSE (Server-Sent Events over HTTP).",
+    "tags": ["mcp", "model context protocol", "genai", "tools", "mcp server", "mcp client"]
+  },
+  {
+    "id": "note_010",
+    "subject": "Artificial Intelligence",
+    "topic": "Retrieval-Augmented Generation (RAG) Fundamentals",
+    "title": "RAG Architecture: Document Chunking, Embeddings, and Grounded Generation",
+    "summary": "RAG enriches LLM prompts with semantically retrieved context from private documents to eliminate hallucinations.",
+    "content": "RAG overcomes the knowledge cut-off and hallucination issues of LLMs.\nRAG Pipeline:\n1. Document Ingestion: Parse PDFs, text, or markdown files into clean text.\n2. Chunking: Split text into coherent passages (e.g., 500 tokens with 50-token overlap).\n3. Vector Embedding: Convert chunks into dense vector representations using models like text-embedding-3-small or all-MiniLM-L6-v2.\n4. Vector Storage: Index vectors in ChromaDB, FAISS, or Pinecone.\n5. Retrieval: At query time, convert user query into an embedding and execute Cosine Similarity or Approximate Nearest Neighbor (ANN) search.\n6. Generation: Augment system prompt: 'Answer the student using ONLY this retrieved context: {context}'.",
+    "tags": ["rag", "retrieval", "embeddings", "vector store", "chunking", "llm"]
+  },
+  {
+    "id": "note_011",
+    "subject": "Artificial Intelligence",
+    "topic": "Transformer Architecture and Self-Attention Mechanism",
+    "title": "The Transformer: Scaled Dot-Product Attention and Multi-Head Attention",
+    "summary": "How self-attention parallelizes sequence modeling and captures long-range dependencies.",
+    "content": "Transformers replaced sequential RNNs/LSTMs using pure attention mechanisms ('Attention is All You Need', Vaswani et al., 2017).\nScaled Dot-Product Attention formula:\nAttention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V\n- Query (Q): What the token is looking for.\n- Key (K): What information the token holds.\n- Value (V): The actual content vector to be aggregated.\nMulti-Head Attention projects Q, K, and V multiple times with different learned matrices, allowing the model to jointly attend to information from different representation subspaces at different positions.",
+    "tags": ["transformer", "attention", "self-attention", "genai", "deep learning"]
+  },
+  {
+    "id": "note_012",
+    "subject": "Artificial Intelligence",
+    "topic": "Vector Embeddings and Cosine Similarity Mathematics",
+    "title": "Vector Spaces, Dense Embeddings, and Cosine Distance",
+    "summary": "Mathematical foundation of semantic search in vector databases.",
+    "content": "An embedding maps discrete words or documents into a continuous vector space R^d where semantic similarity corresponds to geometric closeness.\nCosine Similarity formula:\ncos(theta) = (A . B) / (||A|| * ||B||)\nValues range from -1 (opposite) to +1 (identical direction).\nFor normalized unit vectors (||A|| = ||B|| = 1), cosine similarity equals the simple dot product (A . B), enabling extremely fast vector retrieval using hardware-accelerated matrix multiplication.",
+    "tags": ["embeddings", "cosine similarity", "vector space", "nlp", "math"]
+  },
+  {
+    "id": "note_013",
+    "subject": "Operating Systems",
+    "topic": "CPU Scheduling Algorithms",
+    "title": "Comparison of CPU Scheduling: FCFS, SJF, Round Robin, and Priority",
+    "summary": "Preemptive vs non-preemptive CPU scheduling criteria and turnaround times.",
+    "content": "CPU scheduling determines which ready process is allocated the CPU by the short-term scheduler.\n- First-Come, First-Served (FCFS): Simple FIFO queue, suffers from Convoy Effect.\n- Shortest Job First (SJF): Optimal average waiting time, but requires knowing burst time in advance. Can cause starvation of long jobs.\n- Round Robin (RR): Time quantum allocated per process. Preemptive, starvation-free, ideal for time-sharing systems.\n- Priority Scheduling: Highest priority executes first. Aging technique prevents starvation of low-priority processes.",
+    "tags": ["cpu scheduling", "round robin", "sjf", "operating systems", "convoy effect"]
+  },
+  {
+    "id": "note_014",
+    "subject": "Operating Systems",
+    "topic": "Virtual Memory, Paging, and Page Faults",
+    "title": "Virtual Memory Management: Page Tables, TLB, and Page Replacement",
+    "summary": "Translating virtual addresses to physical frames and handling page faults.",
+    "content": "Virtual memory gives processes the illusion of having a large contiguous memory space.\n- Paging splits virtual address space into fixed-size Pages (e.g. 4KB) and physical memory into Frames.\n- Page Table maps Page Number to Frame Number with Valid/Invalid protection bits.\n- Translation Lookaside Buffer (TLB): High-speed hardware cache for page table lookups.\n- Page Fault: Triggered when an accessed page is not currently in physical RAM. OS traps to kernel, swaps page from disk into a free frame, updates page table, and restarts instruction.\nPage replacement algorithms: FIFO, LRU (Least Recently Used), Optimal (Belady's).",
+    "tags": ["virtual memory", "paging", "tlb", "page fault", "lru", "operating systems"]
+  },
+  {
+    "id": "note_015",
+    "subject": "Operating Systems",
+    "topic": "Process Synchronization: Mutex vs Semaphore vs Spinlock",
+    "title": "Synchronization Primitives and Solving the Critical Section Problem",
+    "summary": "Ensuring mutual exclusion, progress, and bounded waiting in concurrent programs.",
+    "content": "The Critical Section is code accessing shared resources that cannot be concurrently executed.\nSynchronization primitives:\n- Mutex (Mutual Exclusion Lock): Binary locking mechanism with ownership (the thread that locks must be the one that unlocks).\n- Counting Semaphore: Integer counter initialized to N. wait() (P) decrements; signal() (V) increments. Useful for resource pool tracking.\n- Spinlock: Busy-waits in a CPU loop; efficient only for short critical sections on multi-core systems where context-switching overhead exceeds wait time.\n- Deadlock Prevention requires breaking one of Coffman's 4 conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait.",
+    "tags": ["mutex", "semaphore", "synchronization", "deadlock", "critical section"]
+  },
+  {
+    "id": "note_016",
+    "subject": "Cloud Computing",
+    "topic": "Docker Containerization vs Virtual Machines",
+    "title": "Containerization Principles: Namespaces, Cgroups, and Docker Images",
+    "summary": "Why containers are lightweight compared to hypervisor-based virtual machines.",
+    "content": "Containers package an application and all its dependencies into an isolated runtime unit.\n- Virtual Machines (VMs): Abstract physical hardware using a Hypervisor. Each VM includes a full Guest Operating System (gigabytes in size, minutes boot time).\n- Containers: Share the host OS kernel. Isolation is achieved via Linux kernel primitives:\n  1. Namespaces: Isolate process IDs (PID), network interfaces (NET), mount points (MNT), and user IDs.\n  2. Control Groups (cgroups): Limit CPU, memory, disk I/O, and network bandwidth.\nResult: Fast boot in milliseconds, megabyte-sized images, and near-native performance.",
+    "tags": ["docker", "containers", "virtualization", "cloud", "cgroups", "namespaces"]
+  },
+  {
+    "id": "note_017",
+    "subject": "Cloud Computing",
+    "topic": "Microservices vs Monoliths and API Gateway Pattern",
+    "title": "Architectural Patterns: Monoliths, Microservices, and API Gateways",
+    "summary": "Decoupling services for independent deployability and centralized routing.",
+    "content": "Monolithic architectures package UI, business logic, and database access into a single codebase.\nMicroservices decompose applications into independently deployable, loosely coupled services communicating via lightweight protocols (REST HTTP/JSON or gRPC).\nKey components:\n- API Gateway: Single entry point for clients; handles reverse proxying, rate limiting, authentication, SSL termination, and caching.\n- Service Discovery: Dynamic registry (e.g. Consul, Eureka) where instances register their host/port.\n- Circuit Breaker Pattern: Prevents cascading failures when downstream microservices fail.",
+    "tags": ["microservices", "monolith", "api gateway", "distributed systems", "cloud"]
+  },
+  {
+    "id": "note_018",
+    "subject": "Software Engineering",
+    "topic": "RESTful API Design Best Practices",
+    "title": "Designing Production-Ready REST APIs: HTTP Methods, Status Codes, and Idempotency",
+    "summary": "Standard conventions for URIs, HTTP verbs, error responses, and pagination.",
+    "content": "REST (Representational State Transfer) adheres to stateless client-server conventions.\n- Resources are nouns: /api/students, /api/timetable (avoid verbs in paths).\n- HTTP Methods:\n  * GET: Safe and idempotent; retrieves representation.\n  * POST: Non-idempotent; creates new resource.\n  * PUT: Idempotent; full replacement of resource.\n  * PATCH: Partial update.\n  * DELETE: Idempotent; removes resource.\n- Proper HTTP Status Codes:\n  * 200 OK, 201 Created, 204 No Content\n  * 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 422 Unprocessable Entity\n  * 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable.",
+    "tags": ["rest api", "http", "api design", "software engineering", "status codes"]
+  },
+  {
+    "id": "note_019",
+    "subject": "Software Engineering",
+    "topic": "JWT Authentication and Password Hashing with Bcrypt",
+    "title": "Stateless Authentication using JSON Web Tokens (JWT) and Salted Hashes",
+    "summary": "How header, payload, and signature work together for secure API auth.",
+    "content": "JSON Web Token (JWT) is a compact, URL-safe format for passing claims between parties.\nStructure: Header.Payload.Signature (Base64Url encoded).\n1. Header: Algorithm (HS256) and token type.\n2. Payload: Claims such as sub (user ID), exp (expiration timestamp), role, email.\n3. Signature: HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), secret).\nPassword Security: Passwords should NEVER be stored in plaintext. Use bcrypt or Argon2 with random cryptographic salt and a configurable work factor to resist rainbow table and brute-force attacks.",
+    "tags": ["jwt", "authentication", "bcrypt", "security", "passwords", "tokens"]
+  },
+  {
+    "id": "note_020",
+    "subject": "Artificial Intelligence",
+    "topic": "LLM Function Calling and Structured Outputs",
+    "title": "How Generative Models Execute External Tools and APIs",
+    "summary": "The mechanism of JSON schema declaration, tool selection, and tool output reinjection.",
+    "content": "LLMs cannot perform live calculations or access private databases on their own without Tool Calling.\nWorkflow:\n1. Developer defines tool definitions with name, description, and JSON Schema of arguments.\n2. User submits prompt: 'What is my next class?'.\n3. LLM receives prompt + tool declarations. The model predicts a structured tool call: {name: 'get_timetable', arguments: {student_id: 'std_001'}} instead of text.\n4. Application halts LLM generation, executes the function against database/MCP server, and obtains structured JSON result.\n5. Application appends a tool response message to the message history.\n6. LLM runs a second inference pass, synthesizing a natural language answer grounded in the real tool data.",
+    "tags": ["tool calling", "function calling", "genai", "mcp", "llm", "structured output"]
+  },
+  {
+    "id": "note_021",
+    "subject": "DBMS",
+    "topic": "SQL vs NoSQL Databases (MongoDB)",
+    "title": "Comparing Relational SQL Databases with Document-Oriented NoSQL (MongoDB)",
+    "summary": "Schema flexibility, horizontal scaling, ACID vs BASE, and CAP theorem trade-offs.",
+    "content": "Relational Databases (PostgreSQL, MySQL):\n- Fixed schemas, tabular structure with foreign keys, strong ACID compliance, vertical scaling.\n- Best for complex JOINs and strict financial or transactional consistency.\n\nDocument Databases (MongoDB):\n- Dynamic, schema-less JSON/BSON documents.\n- Embedded subdocuments and arrays reduce JOINs.\n- Native horizontal scaling via Sharding.\n- Flexible for rapid prototyping, chat logs, user profile metadata, and dynamic content.",
+    "tags": ["mongodb", "nosql", "sql", "relational", "sharding", "acid"]
+  }
+]

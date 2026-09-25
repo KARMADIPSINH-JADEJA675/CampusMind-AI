@@ -1,0 +1,31 @@
+CAMPUSMIND ACADEMIC REPOSITORY
+Department of Computer Science & Engineering
+Course: CS-401 - Database Management Systems (DBMS)
+Module: Relational Design Theory, Normalization & Query Processing
+
+1. Introduction to Relational Design
+A relational schema consists of a set of attributes and a set of functional dependencies. Good database design ensures that:
+- Redundancy is minimized.
+- Insertion anomalies (unable to insert data without null values in unrelated fields) are avoided.
+- Deletion anomalies (accidental loss of essential information when deleting a tuple) are avoided.
+- Update anomalies (data inconsistency resulting from updating duplicate data in one place but not another) are prevented.
+
+2. Functional Dependencies
+Given relation R, an attribute Y is functionally dependent on X (written X -> Y) if each value of X is associated with exactly one value of Y.
+Armstrong's Axioms:
+- Reflexivity: If Y is a subset of X, then X -> Y.
+- Augmentation: If X -> Y, then XZ -> YZ.
+- Transitivity: If X -> Y and Y -> Z, then X -> Z.
+
+3. Step-by-Step Normal Forms
+- First Normal Form (1NF): Every attribute cell must contain atomic values only. Multi-valued or composite attributes are prohibited.
+- Second Normal Form (2NF): Relation must be in 1NF and no non-prime attribute should be partially dependent on any candidate key. Every non-prime attribute must depend on the whole candidate key.
+- Third Normal Form (3NF): Relation must be in 2NF, and for every non-trivial functional dependency X -> Y, either X is a superkey or Y is a prime attribute. This eliminates transitive dependencies.
+- Boyce-Codd Normal Form (BCNF): Relation must be in 3NF, and for every non-trivial functional dependency X -> Y, X must be a superkey. BCNF strictly eliminates all anomalies caused by functional dependencies.
+
+4. Transaction Management and ACID Properties
+A database transaction is an atomic sequence of operations (read/write).
+- Atomicity: Managed by Undo/Redo recovery logs.
+- Consistency: Preserved by schema constraints, triggers, and foreign keys.
+- Isolation: Enforced via concurrency control (Two-Phase Locking, Timestamp Ordering, Multiversion Concurrency Control - MVCC).
+- Durability: Ensured by Write-Ahead Logging (WAL) and disk flushing.

@@ -1,0 +1,492 @@
+[
+  {
+    "id": "tt_001",
+    "subject": "Prompt Engineering",
+    "code": "01CT0727",
+    "day": "Monday",
+    "time": "07:30 AM - 08:30 AM",
+    "room": "MA112",
+    "teacher": "Ms. Kawal Preet Kaur",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_002",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Monday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA115",
+    "teacher": "Prof. Shamsaagazarzoo Alam",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_003",
+    "subject": "Management Information Systems",
+    "code": "MIS",
+    "day": "Monday",
+    "time": "07:30 AM - 08:30 AM",
+    "room": "MA105",
+    "teacher": "Prof. Suhag Baldaniya",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_004",
+    "subject": "Capstone Project",
+    "code": "01CT0715",
+    "day": "Monday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA108",
+    "teacher": "Dr. Krishna Prakash",
+    "type": "Project"
+  },
+  {
+    "id": "tt_005",
+    "subject": "Information Retrieval and Natural Language Processing",
+    "code": "01CT0723",
+    "day": "Monday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA112",
+    "teacher": "Ms. Kawal Preet Kaur",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_006",
+    "subject": "Introduction to DevOps Tools",
+    "code": "01CT0728",
+    "day": "Monday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA102",
+    "teacher": "Mr. Bheesham Kumar",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_007",
+    "subject": "FPGA Based System Design",
+    "code": "01CT0718",
+    "day": "Monday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA104",
+    "teacher": "Dr. D D Zala",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_008",
+    "subject": "Capstone Project",
+    "code": "01CT0715",
+    "day": "Monday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA113",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Project"
+  },
+  {
+    "id": "tt_009",
+    "subject": "Advanced Database",
+    "code": "01CT0725",
+    "day": "Monday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA102",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_010",
+    "subject": "Cloud Developing",
+    "code": "01CT0720",
+    "day": "Monday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA104",
+    "teacher": "Prof. Rakesh Oza",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_011",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Monday",
+    "time": "11:00 AM - 12:00 PM",
+    "room": "MA105",
+    "teacher": "Dr. Mitesh Solanki",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_012",
+    "subject": "PBL",
+    "code": "PBL",
+    "day": "Monday",
+    "time": "02:00 PM - 03:00 PM",
+    "room": "MA105",
+    "teacher": "",
+    "type": "PBL"
+  },
+  {
+    "id": "tt_013",
+    "subject": "Introduction to DevOps Tools",
+    "code": "01CT0728",
+    "day": "Monday",
+    "time": "03:00 PM - 04:00 PM",
+    "room": "MA113",
+    "teacher": "Dr. D D Zala",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_014",
+    "subject": "Generative AI",
+    "code": "01CT0711",
+    "day": "Monday",
+    "time": "06:00 PM - 07:00 PM",
+    "room": "ONLINE",
+    "teacher": "Prof. Drashti Gardharia",
+    "type": "Online"
+  },
+  {
+    "id": "tt_015",
+    "subject": "Management Information Systems",
+    "code": "MIS",
+    "day": "Tuesday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA105",
+    "teacher": "Prof. Suhag Baldaniya",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_016",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Tuesday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA102",
+    "teacher": "Prof. Shamsaagazarzoo Alam",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_017",
+    "subject": "Prompt Engineering",
+    "code": "01CT0727",
+    "day": "Tuesday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA112",
+    "teacher": "Ms. Kawal Preet Kaur",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_018",
+    "subject": "VLSI Physical Design",
+    "code": "01CT0717",
+    "day": "Tuesday",
+    "time": "11:00 AM - 12:00 PM",
+    "room": "MA112",
+    "teacher": "Prof. Rakesh Oza",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_019",
+    "subject": "Advanced Database",
+    "code": "01CT0725",
+    "day": "Tuesday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA113",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_020",
+    "subject": "Cloud Developing",
+    "code": "01CT0720",
+    "day": "Tuesday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA112",
+    "teacher": "Prof. Rakesh Oza",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_021",
+    "subject": "Generative AI",
+    "code": "01CT0711",
+    "day": "Tuesday",
+    "time": "02:00 PM - 03:00 PM",
+    "room": "MA106",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_022",
+    "subject": "Information Retrieval and Natural Language Processing",
+    "code": "01CT0723",
+    "day": "Tuesday",
+    "time": "03:00 PM - 04:30 PM",
+    "room": "MA106",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_023",
+    "subject": "Capstone Project",
+    "code": "01CT0715",
+    "day": "Wednesday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA108",
+    "teacher": "Dr. Krishna Prakash",
+    "type": "Project"
+  },
+  {
+    "id": "tt_024",
+    "subject": "Capstone Project",
+    "code": "01CT0715",
+    "day": "Wednesday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA113",
+    "teacher": "Prof. Chandrasinh Parmar",
+    "type": "Project"
+  },
+  {
+    "id": "tt_025",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Wednesday",
+    "time": "11:00 AM - 12:00 PM",
+    "room": "MA105",
+    "teacher": "SPL",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_026",
+    "subject": "Information Retrieval and Natural Language Processing",
+    "code": "01CT0723",
+    "day": "Wednesday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA113",
+    "teacher": "Prof. Nishith Kotak",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_027",
+    "subject": "FPGA Based System Design",
+    "code": "01CT0718",
+    "day": "Wednesday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA101",
+    "teacher": "Dr. D D Zala",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_028",
+    "subject": "PBL",
+    "code": "PBL",
+    "day": "Wednesday",
+    "time": "02:00 PM - 03:00 PM",
+    "room": "MA105",
+    "teacher": "",
+    "type": "PBL"
+  },
+  {
+    "id": "tt_029",
+    "subject": "VLSI Physical Design",
+    "code": "01CT0717",
+    "day": "Wednesday",
+    "time": "03:00 PM - 04:00 PM",
+    "room": "MA104",
+    "teacher": "Mr. Gaurav Joshi",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_030",
+    "subject": "VLSI Physical Design",
+    "code": "01CT0717",
+    "day": "Wednesday",
+    "time": "04:00 PM - 05:00 PM",
+    "room": "MA104",
+    "teacher": "Mr. Gaurav Joshi",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_031",
+    "subject": "Information Retrieval and Natural Language Processing",
+    "code": "01CT0723",
+    "day": "Thursday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA112",
+    "teacher": "Ms. Kawal Preet Kaur",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_032",
+    "subject": "Introduction to DevOps Tools",
+    "code": "01CT0728",
+    "day": "Thursday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA102",
+    "teacher": "Mr. Bheesham Kumar",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_033",
+    "subject": "FPGA Based System Design",
+    "code": "01CT0718",
+    "day": "Thursday",
+    "time": "07:30 AM - 09:00 AM",
+    "room": "MA104",
+    "teacher": "Dr. D D Zala",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_034",
+    "subject": "Advanced Database",
+    "code": "01CT0725",
+    "day": "Thursday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA113",
+    "teacher": "Prof. Drashti Gardharia",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_035",
+    "subject": "Cloud Developing",
+    "code": "01CT0720",
+    "day": "Thursday",
+    "time": "09:00 AM - 10:30 AM",
+    "room": "MA107",
+    "teacher": "Prof. Rakesh Oza",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_036",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Thursday",
+    "time": "11:00 AM - 12:00 PM",
+    "room": "MA105",
+    "teacher": "SPL",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_037",
+    "subject": "PBL",
+    "code": "PBL",
+    "day": "Thursday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA105",
+    "teacher": "",
+    "type": "PBL"
+  },
+  {
+    "id": "tt_038",
+    "subject": "Prompt Engineering",
+    "code": "01CT0727",
+    "day": "Thursday",
+    "time": "12:30 PM - 01:30 PM",
+    "room": "MA105",
+    "teacher": "Dr. Krishn Limbachiya",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_039",
+    "subject": "PBL",
+    "code": "PBL",
+    "day": "Thursday",
+    "time": "02:00 PM - 03:00 PM",
+    "room": "MA105",
+    "teacher": "",
+    "type": "PBL"
+  },
+  {
+    "id": "tt_040",
+    "subject": "VLSI Physical Design",
+    "code": "01CT0717",
+    "day": "Thursday",
+    "time": "03:00 PM - 04:30 PM",
+    "room": "MA108",
+    "teacher": "Mr. Gaurav Joshi",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_041",
+    "subject": "Mobile and Pervasive Computing",
+    "code": "01CT0716",
+    "day": "Friday",
+    "time": "07:30 AM - 08:30 AM",
+    "room": "MA101",
+    "teacher": "Dr. Mitesh Solanki",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_042",
+    "subject": "Library",
+    "code": "LIB",
+    "day": "Friday",
+    "time": "08:30 AM - 09:30 AM",
+    "room": "",
+    "teacher": "",
+    "type": "Library"
+  },
+  {
+    "id": "tt_043",
+    "subject": "FPGA Based System Design",
+    "code": "01CT0718",
+    "day": "Friday",
+    "time": "09:30 AM - 10:30 AM",
+    "room": "MA101",
+    "teacher": "Dr. D D Zala",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_044",
+    "subject": "Prompt Engineering",
+    "code": "01CT0727",
+    "day": "Friday",
+    "time": "11:00 AM - 12:00 PM",
+    "room": "MA101",
+    "teacher": "Dr. Krishn Limbachiya",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_045",
+    "subject": "Management Information Systems",
+    "code": "MIS",
+    "day": "Friday",
+    "time": "12:00 PM - 01:30 PM",
+    "room": "MA101",
+    "teacher": "Prof. Suhag Baldaniya",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_046",
+    "subject": "Generative AI",
+    "code": "01CT0711",
+    "day": "Friday",
+    "time": "06:00 PM - 07:00 PM",
+    "room": "ONLINE",
+    "teacher": "Prof. Drashti Gardharia",
+    "type": "Online"
+  },
+  {
+    "id": "tt_047",
+    "subject": "Introduction to DevOps Tools",
+    "code": "01CT0728",
+    "day": "Saturday",
+    "time": "07:30 AM - 09:30 AM",
+    "room": "MA102",
+    "teacher": "Mr. Bheesham Kumar",
+    "type": "Lecture"
+  },
+  {
+    "id": "tt_048",
+    "subject": "Generative AI",
+    "code": "01CT0711",
+    "day": "Saturday",
+    "time": "11:00 AM - 12:30 PM",
+    "room": "ONLINE",
+    "teacher": "Prof. Drashti Gardharia",
+    "type": "Online"
+  },
+  {
+    "id": "tt_049",
+    "subject": "PBL",
+    "code": "PBL",
+    "day": "Saturday",
+    "time": "12:30 PM - 01:30 PM",
+    "room": "",
+    "teacher": "",
+    "type": "PBL"
+  }
+]
